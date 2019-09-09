@@ -1,3 +1,3 @@
-# detector-redditv2
+# reddit-flair-detector
 
-catch it live on https://reddit-flair-detector-app.herokuapp.com/
+catch it live on https://reddit-flair-detector-final.herokuapp.com/
