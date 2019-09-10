@@ -1,6 +1,23 @@
 # Reddit-Flair-Detector
 
-catch it live on https://reddit-flair-detector-final.herokuapp.com/
+watch it in live action on https://reddit-flair-detector-final.herokuapp.com/
+
+In order to use this:
+1. Enter a valid reddit url, submit it.
+2. result.html will display the results.
+3. Navigate to statistics section under the navigation bar to view statistics:
+   
+   3.1 Relation between the flairs their frequency and the year of post.
+   
+   3.2 Relation between total scores and different flairs.
+   
+   3.3 Relation between mean scores and different flairs.
+   
+   3.4 Relation between number of comments and different flairs.
+   
+   3.5 Relation between comments and hours when they were posted (comments).
+   
+   3.6 Relation between flairs and their occurence in dataset instance.
 
 This is a flask based application hosted on Heroku server.
 
@@ -30,14 +47,18 @@ Description of files used is given below:
   12. randomforest_on_url.ipynb in this file classifier is applied on dataset using URL as the only feature.
   13. logistic_regression_applied_to_combined_features.ipynb in this file logistic regression is applied to the dataset taking                 (title+url+comments) as combined features and gives a maximum accuracy of 77.90%.
   14. random_forest_on_combined_features.ipynb in this file Random Forest is applied to the dataset taking (title+url+comments) as             combined features and gives accuracy of 74.37%. 
-
+  15. application.py is the main file that runs the applicaton on flask.
   
 Predicted accuracies:  
   
-Accuracy given by Random Forest Classifier is 74.372 on combined features when together url,title and comments are used as features.
+1. Accuracy given by Random Forest Classifier is 74.372 on combined features when together url,title and comments are used as features.
 
-Accuracy given by Logistic Regression is 77.90 on combined features when together url,title and comments are used as features.
+2. Accuracy given by Logistic Regression is 77.90 on combined features when together url,title and comments are used as features.
 
-Accuracy of Logistic Regression applied only to url as feature is 60.91.
+3. Accuracy of Logistic Regression applied only to url as feature is 60.91.
 
-Accuracy of Random Forest Classifier applied to url is 59.30.
+4. Accuracy of Random Forest Classifier applied to url is 59.30.
+
+As evident from above I have used combined features url + title + comments as maximum accuracy is achieved using this. I too have used CountVectorizer for fitting purpose and LogisticRegression,RandomForest to classify the flair.
+
+
