@@ -27,6 +27,9 @@ Description of files used is given below:
   
   
 Accuracy given by Random Forest Classifier is 74.372 on combined features when together url,title and comments are used as features.
+
 Accuracy given by Logistic Regression is 77.90 on combined features when together url,title and comments are used as features.
+
 Accuracy of Logistic Regression applied only to url as feature is 60.91.
+
 Accuracy of Random Forest Classifier applied to url is 59.30.
