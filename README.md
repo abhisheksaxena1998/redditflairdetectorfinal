@@ -38,7 +38,7 @@ Description of files used is given below:
   3. redditmodelforflair.pkl is the machine learning model used to make flair predictions.
   4. cleaned_reddit_alphabetav5.csv is csv file containing combined features(title+url+comments).
   5. MongoDb collection folder contains the mongodb instance.
-  6. requirements.txt specify the requirements for heroku server.
+  6. requirements.txt specify the requirements for heroku server and list of libraries used.
   7. Procfile is the file required by the heroku server.
   8. fetch_data_from_reddit.ipynb gets data from reddit with fields as: flair, title, score, id, url, comms_num, created, body, author,      comments.
   9. reddit_combine_cols.ipynb combines features such as title, url, comments into one.
