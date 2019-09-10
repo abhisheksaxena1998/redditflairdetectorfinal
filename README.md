@@ -2,7 +2,7 @@
 
 watch it in live action on https://reddit-flair-detector-final.herokuapp.com/
 
-In order to use this:
+#In order to use this:
 1. Enter a valid reddit url, submit it.
 2. result.html will display the results.
 3. Navigate to statistics section under the navigation bar to view statistics:
@@ -21,11 +21,17 @@ In order to use this:
 
 This is a flask based application hosted on Heroku server.
 
+#Codebase
+
+The entire code has been developed using Python programming language, utilizing it's powerful text processing and machine learning modules. The application has been developed using Flask framework and hosted on Heroku web server.
+
+#Execution
+
 To execute the application on localhost:
   1. set FLASK_APP = application.py
   2. flask run
   
-Description of files used is given below:
+#Description of files used is given below:
   1. templates folder contains all the web templates related to the flask application.
      
      1.1 index.html is home page of application.
@@ -49,7 +55,7 @@ Description of files used is given below:
   14. random_forest_on_combined_features.ipynb in this file Random Forest is applied to the dataset taking (title+url+comments) as             combined features and gives accuracy of 74.37%. 
   15. application.py is the main file that runs the applicaton on flask.
   
-Predicted accuracies:  
+#Predicted accuracies:  
   
 1. Accuracy given by Random Forest Classifier is 74.372 on combined features when together url,title and comments are used as features.
 
@@ -59,7 +65,7 @@ Predicted accuracies:
 
 4. Accuracy of Random Forest Classifier applied to url is 59.30.
 
-Approach I followed:
+#Approach I followed:
 
 1. Fetch data from r/india subreddit.
 2. Clean the data, combine features, remove stopwords using Spacy.
@@ -67,6 +73,15 @@ Approach I followed:
 4. Apply the classifier.
 5. Predict the flair
 
-As evident from above I have used combined features url + title + comments as maximum accuracy is achieved using this. I too have used CountVectorizer for fitting purpose and LogisticRegression,RandomForest to classify the flair.
+As evident from above I have used combined features url + title + comments as maximum accuracy is achieved using this. I too have used CountVectorizer for fitting purpose and LogisticRegression, RandomForest to classify the flair.
 
+#Dependencies used are:
+
+1. scikit-learn
+2. nltk
+3. Flask
+4. praw
+5. Numpy
+6. pandas
+7. spacy
 
