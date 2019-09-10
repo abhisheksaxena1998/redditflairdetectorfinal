@@ -59,6 +59,14 @@ Predicted accuracies:
 
 4. Accuracy of Random Forest Classifier applied to url is 59.30.
 
+Approach I followed:
+
+1. Fetch data from r/india subreddit.
+2. Clean the data, combine features, remove stopwords using Spacy.
+3. Train using combined features.
+4. Apply the classifier.
+5. Predict the flair
+
 As evident from above I have used combined features url + title + comments as maximum accuracy is achieved using this. I too have used CountVectorizer for fitting purpose and LogisticRegression,RandomForest to classify the flair.
 
 
