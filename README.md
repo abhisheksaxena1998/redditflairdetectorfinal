@@ -1,4 +1,4 @@
-# reddit-flair-detector
+# Reddit-Flair-Detector
 
 catch it live on https://reddit-flair-detector-final.herokuapp.com/
 
