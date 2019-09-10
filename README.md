@@ -20,11 +20,19 @@ Description of files used is given below:
   2. static folder contains all the static images related to flask application.
   3. redditmodelforflair.pkl is the machine learning model used to make flair predictions.
   4. cleaned_reddit_alphabetav5.csv is csv file containing combined features(title+url+comments).
-  5. MongoDb collection folder contains the mongodb instance and csv.
+  5. MongoDb collection folder contains the mongodb instance.
   6. requirements.txt specify the requirements for heroku server.
   7. Procfile is the file required by the heroku server.
+  8. fetch_data_from_reddit.ipynb gets data from reddit with fields as: flair, title, score, id, url, comms_num, created, body, author,      comments.
+  9. reddit_combine_cols.ipynb combines features such as title, url, comments into one.
+  10. reddit_stats.ipynb gives statistics on an instance of dataset (it can be viewed in ststistics menu under navigation bar on               application page).
+  11. write_combined_features_stopwords_removed.ipynb removes all the STOPWORDS in the dataset using SPACY.
+  12. randomforest_on_url.ipynb in this file classifier is applied on dataset using URL as the only feature.
+  13. logistic_regression_applied_to_combined_features.ipynb in this file logistic regression is applied to the dataset taking                 (title+url+comments) as combined features and gives a maximum accuracy of 77.90%.
+  14. random_forest_on_combined_features.ipynb in this file Random Forest is applied to the dataset taking (title+url+comments) as             combined features and gives accuracy of 74.37%. 
+
   
-  
+Predicted accuracies:  
   
 Accuracy given by Random Forest Classifier is 74.372 on combined features when together url,title and comments are used as features.
 
