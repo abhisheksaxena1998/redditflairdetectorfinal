@@ -20,3 +20,9 @@ Descriptioin of files used is given below:
   6. requirements.txt specify the requirements for heroku server.
   7. Procfile is the file required by the heroku server.
   
+  
+  
+Accuracy given by Random Forest Classifier is 74.372 on combined features when together url,title and comments are used as features.
+Accuracy given by Logistic Regression is 77.90 on combined features when together url,title and comments are used as features.
+Accuracy of Logistic Regression applied only to url as feature is 60.91.
+Accuracy of Random Forest Classifier applied to url is 59.30.
