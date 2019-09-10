@@ -55,6 +55,7 @@ To execute the application on localhost:
   13. logistic_regression_applied_to_combined_features.ipynb in this file logistic regression is applied to the dataset taking                 (title+url+comments) as combined features and gives a maximum accuracy of 77.90%.
   14. random_forest_on_combined_features.ipynb in this file Random Forest is applied to the dataset taking (title+url+comments) as             combined features and gives accuracy of 74.37%. 
   15. application.py is the main file that runs the applicaton on flask.
+  16. original_reddit_data.csv is the file that contains original raw data fetched from reddit.
   
 ## Predicted accuracies:  
   
